@@ -648,11 +648,11 @@
     },
     "/weather/tropical/storms/active/{format}": {
       "get": {
-        "description": "**Get Tropical Storm Active**\n\n**Applies to**: Gen 1 (S0 and S1) and Gen 2 pricing tiers.\n\nGet all government-issued active tropical storms. Information about the tropical storms includes, government ID, basin ID, year of origin, name and if it is subtropical.",
-        "operationId": "Weather_GetTropicalStormActive",
+        "description": "**Get Active Tropical Storms**\n\n**Applies to**: Gen 1 (S0 and S1) and Gen 2 pricing tiers.\n\nGet all government-issued active tropical storms. Information about the tropical storms includes, government ID, basin ID, year of origin, name and if it is subtropical.",
+        "operationId": "Weather_GetActiveTropicalStorms",
         "x-ms-examples": {
-          "Get Tropical Storm Active": {
-            "$ref": "./examples/GetActiveStorms.json"
+          "Get Active Tropical Storms": {
+            "$ref": "./examples/GetActiveTropicalStorms.json"
           }
         },
         "parameters": [
@@ -686,10 +686,10 @@
         "x-ms-client-name": "SearchTropicalStorm",
         "x-ms-examples": {
           "Get Tropical Storm Search": {
-            "$ref": "./examples/GetStormSearch.json"
+            "$ref": "./examples/GetTropicalStormSearch.json"
           },
           "Get Tropical Storm Search With Three Properties": {
-            "$ref": "./examples/GetFullStormSearch.json"
+            "$ref": "./examples/GetTropicalStormFullSearch.json"
           }
         },
         "parameters": [
@@ -725,13 +725,13 @@
         }
       }
     },
-    "/weather/tropical/storms/forecasts/{format}": {
+    "/weather/tropical/storms/forecast/{format}": {
       "get": {
-        "description": "**Get Tropical Storm Forecasts**\n\n**Applies to**: Gen 1 (S0 and S1) and Gen 2 pricing tiers.\n\nGet individual government-issued tropical storm forecasts. Information about the forecasted tropical storms includes, location, status, date the forecast was created, window, wind speed and wind radii.",
+        "description": "**Get Tropical Storm Forecast**\n\n**Applies to**: Gen 1 (S0 and S1) and Gen 2 pricing tiers.\n\nGet individual government-issued tropical storm forecasts. Information about the forecasted tropical storms includes, location, status, date the forecast was created, window, wind speed and wind radii.",
         "operationId": "Weather_GetTropicalStormForecast",
         "x-ms-examples": {
-          "Get Tropical Storm Forecasts": {
-            "$ref": "./examples/GetStormForecast.json"
+          "Get Tropical Storm Forecast": {
+            "$ref": "./examples/GetTropicalStormForecast.json"
           }
         },
         "parameters": [
@@ -784,16 +784,16 @@
         }
       }
     },
-    "/weather/tropical/storms/locations/{format}": {
+    "/weather/tropical/storms/location/{format}": {
       "get": {
-        "description": "**Get Tropical Storm Locations**\n\n**Applies to**: Gen 1 (S0 and S1) and Gen 2 pricing tiers.\n\nGet location of individual government-issued tropical storms. Information about the tropical storms includes, location coordinates, geometry, basin ID, date, wind details and wind radii.",
-        "operationId": "Weather_GetTropicalStormLocations",
+        "description": "**Get Tropical Storm Location**\n\n**Applies to**: Gen 1 (S0 and S1) and Gen 2 pricing tiers.\n\nGet location of individual government-issued tropical storms. Information about the tropical storms includes, location coordinates, geometry, basin ID, date, wind details and wind radii.",
+        "operationId": "Weather_GetTropicalStormLocation",
         "x-ms-examples": {
-          "Get Tropical Storm Locations": {
-            "$ref": "./examples/GetStormLocations.json"
+          "Get Tropical Storm Location": {
+            "$ref": "./examples/GetTropicalStormLocation.json"
           },
           "Get Tropical Storm Current Location": {
-            "$ref": "./examples/GetStormCurrentLocation.json"
+            "$ref": "./examples/GetTropicalStormCurrentLocation.json"
           }
         },
         "parameters": [
