@@ -95,7 +95,7 @@
     },
     "WeatherYear": {
       "name": "year",
-      "description": "Year of the cyclone(s)",
+      "description": "Year of the tropical storm",
       "type": "integer",
       "format": "int32",
       "required": true,
